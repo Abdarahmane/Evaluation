@@ -17,24 +17,27 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    width: 100%;  
-    border-bottom: 1px solid var(--silver); 
-    /* padding-bottom: 30px; */
+    width: 98%;  
     font-size: large;
+    border-bottom:  #777777;
+    height: -4px;
 }
+
+
 #home {
     color: var(--primary)}
 
 .menu {
     box-sizing: border-box;
-    /* margin: 23px; */
+    margin: 23px; 
     padding: 5px;
     justify-content: space-between;
     float: inline-start;
   }
 
-.logo-image {
-    margin-right: 10px; 
+.menu-logo {
+   margin-left: 40px;  
+   
 } 
 .menu ul {
   display: flex;
@@ -55,34 +58,41 @@
     border-radius: 8px; 
     font-size: 12px; 
     text-decoration: none; 
-
-
 }
-.hero {
+#bold{
+  color: var(--defaultLinkcolor);
+  border: var(--muted);
+  background-color: var(--white);
+  margin: 25px;
+  border-radius: 14px;
+}
+.container-hero{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
     padding-bottom: 80px;
     padding-top: 60px;
     box-sizing: border-box;
 
 }
-
+.ptp{
+  color: var(--muted);
+  font-size: 15px;
+  margin: 25px;
+}
 .p2 {
    left: 0px;
    align-items: center;
-  
-}
+  }
+ .hp1{
+  color: var(--muted);
+ }
 
 .large-text {
     font-size: 56px; 
     font-weight: 700;
     text-align: left;
-    
-    
 }
-
 .hero-slide {
     text-align: left; 
 }
@@ -93,22 +103,17 @@ span{
 p {
   color: var(--muted);
   font-size: 20px;
-    /* text-align: left;
-    font-weight: 500;
     
-    
-    line-height:2;
-    margin-bottom: 15%; */
 }
 .hero-links {
-    padding: 0PX;
-    margin-top: auto;
-    top: 10%;
+    margin: 0px 2px 5px
+    
 
 }
     
 .hero-content h1{
-  font-size: 52px;
+  font-size: 53px;
+  
   
 }
 .hero-link{
@@ -149,16 +154,10 @@ p {
   }
   .services{
     display: flex;
-    /* grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1 , 70px);
-    gap: 25px; */
-    /* border: 1px solid white;  */
     border-radius: 15px;
-
     text-align: center;
     align-content: center;
     justify-content: center;
-    /* background-color: var(--white); */
     transform: scale(0.8);
     padding-bottom: 0px;
   }
@@ -175,9 +174,10 @@ p {
   .service-box img {
     width: 30px; 
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 
+  }
+  .service-box p {
+    color: var(--muted);
   }
 
   .between{
@@ -223,8 +223,6 @@ p {
     display: flex;
     justify-content: end;
     flex-direction: column;
-    /* margin-top: 74px;
-    margin-right: 225px; */
   }
   .Kf h2{
     display: flex;
@@ -237,8 +235,6 @@ p {
   }
   samp {
     font-size: 40px;
-    /* margin-left: 32px;
-    margin-bottom: 30%; */
   }
 
   .mku h2::after{
@@ -253,6 +249,7 @@ p {
     text-align: center;
     border-radius: 11px;
     margin-left: 30px;
+    
 
     
     
@@ -262,12 +259,14 @@ p {
      background-color: var(--silver);
      margin:30PX ;
      align-items: center;
+     border-radius: 20px;
+    
 
   }
   .i-box-text {
     font-size: 15px;
     text-align: center;
-    
+    color: var(--defaultLinkcolor);
     
   }
 
@@ -297,6 +296,8 @@ p {
     height: 50PX;
     background: transparent;
     color: var(--white);
+    border-color: var(--white);
+    border-radius: 10px;
    
       
   }
@@ -332,13 +333,11 @@ p {
   }
   .container-history  .left-title h3{
     display: flex;
-    justify-content: end
-    ;
+    justify-content: end;
   }
   .container-history  .right-title .right-titles{
     display: flex;
     width: 80%;
-
     flex-direction: column;
   }
   .container-history  .right-title .right-titles hr{
@@ -539,14 +538,16 @@ p {
         color: #ffffff;
     }
 
-    
-
-   
-
     .bn button {
         height: 40px;
         background-color: #ffffff;
-        color: black;
+        color: black; 
+    }
+    #form button{
+      background-color: var(--lightprimary);
+      padding: 8px;
+      border-radius: 10px;
+      color: var(--white);
     }
     .foot{
         display: flex;
